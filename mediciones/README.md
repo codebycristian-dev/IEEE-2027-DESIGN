@@ -6,8 +6,8 @@ Cada campaña contiene:
 - `crudo/` datos tal como los entregó el instrumento, sin editar.
 - `procesado/` resultados intermedios regenerables por script.
 - `figuras/` las figuras exportadas.
-- `README.md` escrito **antes** de medir: protocolo `T-##`, instrumento, calibración, distancias,
-  alturas, orientación, condiciones del entorno, quién midió, y qué se esperaba encontrar.
+- `README.md` escrito **antes** de medir: qué se mide, con qué instrumento y calibración, distancias,
+  alturas, orientación, condiciones del entorno, quién midió y qué se esperaba encontrar.
 
 Reglas:
 - El crudo no se toca ni se "limpia" a mano.

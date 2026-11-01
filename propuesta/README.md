@@ -4,12 +4,12 @@ El entregable del 31 de diciembre de 2026. **Vacío a propósito**: todavía no 
 
 Va acá, cuando corresponda:
 - `propuesta-4-paginas.pdf` y su fuente (LaTeX preferentemente: Times New Roman 12 pt, 4 páginas).
-- `BOM-propuesta.xlsx|csv` generado desde `gestion/BOM.md`.
-- `carta-mentor.pdf` firmada.
-- `checklist-envio.md` con la verificación de formato de las bases.
+- La lista de materiales del entregable, generada desde el BOM de `gestion/` cuando exista.
+- La carta del mentor firmada.
+- Un checklist de formato según las bases.
 
-Restricciones de las bases (`R9`): 4 páginas, Times New Roman 12 pt, incluye BOM y carta del
-mentor. Plazo 31-dic-2026, 23:59 GMT−10.
+Restricciones de las bases: 4 páginas, Times New Roman 12 pt, incluye BOM y carta del mentor. Plazo
+31-dic-2026, 23:59 GMT−10.
 
-Qué entra en cada una de las 4 páginas y de qué documento sale:
-`docs/borrador/00-mapa-propuesta-4-paginas.md`.
+Regla: la propuesta se redacta con resultados medidos. Lo que no se haya medido se rotula como
+expectativa, nunca como resultado.

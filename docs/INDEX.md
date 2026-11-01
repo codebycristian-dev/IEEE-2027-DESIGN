@@ -1,8 +1,7 @@
 # Registro de documentos del proyecto
 
-Este archivo es la **autoridad sobre qué documento está vigente**. Si un documento no figura acá,
-no existe para efectos de la propuesta. Si hay dos versiones, vale la que esta tabla marca como
-vigente.
+Este archivo es la **autoridad sobre qué documento está vigente**. Si un documento no figura acá, no
+existe para efectos de la propuesta. Si hay dos versiones, vale la que esta tabla marca como vigente.
 
 Última actualización: 2026-10-14.
 
@@ -11,43 +10,30 @@ vigente.
 | Código | Título | Versión | Fecha | Estado | Archivo | Relación |
 | --- | --- | --- | --- | --- | --- | --- |
 | DOC-01 | Antenas receptoras reconfigurables para ISAC: evaluación de seis tecnologías candidatas | 1.0 | 2026-10-06 | **Vigente** | `docs/doc-01-evaluacion-tecnologias.pdf` | Origen de la decisión tecnológica y de los requisitos R1–R9 |
-| DOC-02 | Registro del proyecto y decisión final de tecnología (ESPAR vs. RIS vs. píxeles) | 2.0 | 2026-10-13 | **Superado** por DOC-03 | `docs/doc-02-propuesta-inicial.pdf` | Punto de partida sin trazabilidad de diseño; se conserva como histórico |
-| DOC-03 | Especificación de diseño del ESPAR de 7 elementos | 1.0 | 2026-10-14 | Vigente | `docs/diseno/DOC-03-especificacion-de-diseno.md` | Deriva de DOC-01; reemplaza la propuesta técnica de DOC-02 |
-| DOC-04 | Geometría y dimensionamiento | 1.0 | 2026-10-14 | Vigente | `docs/diseno/DOC-04-geometria-y-dimensionamiento.md` | Detalla DOC-03 §5 |
-| DOC-05 | Circuito de control y polarización de diodos PIN | 1.0 | 2026-10-14 | Vigente | `docs/diseno/DOC-05-control-y-polarizacion.md` | Detalla DOC-03 §6 |
-| DOC-06 | Libro de códigos de configuraciones | 1.0 | 2026-10-14 | Vigente | `docs/diseno/DOC-06-libro-de-codigos.md` | Detalla DOC-03 §7 |
-| DOC-07 | Plan de verificación de los criterios de aceptación | 1.0 | 2026-10-14 | Vigente | `docs/diseno/DOC-07-plan-de-verificacion.md` | Operacionaliza los criterios A1–A5 de DOC-02 §7.1 |
-| DOC-08 | Riesgos y compuertas de decisión | 1.0 | 2026-10-14 | Vigente | `docs/diseno/DOC-08-riesgos-y-compuertas.md` | Actualiza los riesgos de DOC-02 §6.4 y §7.2 |
-| DOC-09 | Mejora de la propuesta de diseño: delta contra DOC-02 | 1.0 | 2026-10-14 | Vigente | `docs/diseno/DOC-09-mejora-de-la-propuesta.md` | Explica qué cambia y por qué respecto de DOC-02 |
+| DOC-02 | Registro del proyecto y decisión final de tecnología (ESPAR vs. RIS vs. píxeles) | 2.0 | 2026-10-13 | **Superado** | `docs/doc-02-propuesta-inicial.pdf` | Punto de partida sin trazabilidad de diseño; se conserva como histórico |
 
-## Notas técnicas (no son DOC-NN)
+Los códigos siguientes (`DOC-03` en adelante) están libres. Se asignan con el criterio de la sección
+«Cómo se agrega un documento».
 
-Las notas de `docs/teoria/` son material de respaldo: teoría, estado del arte, métricas y
-trazabilidad. No llevan número de documento porque no se presentan al concurso; se citan desde
-los DOC-NN.
-
-| Nota | Título | Archivo |
-| --- | --- | --- |
-| N-01 | Fundamentos del ESPAR con elementos parásitos conmutados | `docs/teoria/01-fundamentos-espar.md` |
-| N-02 | Estado del arte y análisis de vacío | `docs/teoria/02-estado-del-arte.md` |
-| N-03 | Métricas, modelo y presupuesto de incertidumbre | `docs/teoria/03-metricas-y-modelo.md` |
-| N-04 | Requisitos y matriz de trazabilidad | `docs/teoria/04-requisitos-y-trazabilidad.md` |
+> `DOC-02` está marcado **Superado** y todavía no tiene reemplazo escrito. Mientras eso siga así, la
+> especificación de diseño del proyecto es la de DOC-02 §5.1, con la salvedad de que sus cotas son de
+> orden de magnitud y no están verificadas.
 
 ## Convención de identificadores
 
-Los identificadores son estables: **no se renumeran ni se reutilizan** aunque el elemento se
+Los identificadores son estables: **no se renumeran ni se reutilizan**, aunque el elemento se
 descarte. Un identificador descartado queda marcado como descartado.
 
-| Prefijo | Significado | Vive en |
+| Prefijo | Significado | Dónde vive |
 | --- | --- | --- |
-| `R#` | Requisito impuesto por las bases del concurso | N-04 (derivados de DOC-01 tabla 2) |
-| `DR-##` | Requisito de diseño, verificable y con fuente | N-04 |
-| `DV-##` | Variable de diseño con rango y criterio de barrido | DOC-04 |
-| `DEC-##` | Decisión de diseño con alternativas descartadas | DOC-03 |
-| `A#` | Criterio de aceptación del prototipo | DOC-03, verificado por DOC-07 |
-| `T-##` | Protocolo de ensayo que verifica un `A#` | DOC-07 |
-| `RSK-##` | Riesgo con mitigación y disparador | DOC-08 |
-| `P#` | Pregunta abierta a los organizadores | `gestion/preguntas-organizadores.md` |
+| `R#` | Requisito impuesto por las bases del concurso | DOC-01, tabla 2 y tabla 7 |
+| `DR-##` | Requisito de diseño, verificable y con fuente | documento de especificación de diseño |
+| `DV-##` | Variable de diseño con rango y criterio de barrido | documento de geometría |
+| `DEC-##` | Decisión de diseño con alternativas descartadas | documento de especificación de diseño |
+| `A#` | Criterio de aceptación del prototipo | DOC-02 §7.1 y documento de verificación |
+| `T-##` | Protocolo de ensayo que verifica un `A#` | documento de verificación |
+| `RSK-##` | Riesgo con mitigación y disparador | registro de riesgos |
+| `P#` | Pregunta abierta a los organizadores | DOC-02 §8.1 y registro de preguntas |
 
 ## Cómo se agrega un documento
 
@@ -64,5 +50,5 @@ descarte. Un identificador descartado queda marcado como descartado.
 
 3. Agregá la fila en la tabla de este registro **en el mismo commit** que el documento.
 4. Si reemplaza a otro, marcá el anterior como *Superado por DOC-NN*. No borres el archivo.
-5. Si el documento cambia una decisión, actualizá `doc-XX` correspondiente y dejá la entrada
-   nueva en el historial de versiones de ese documento, no acá.
+5. Si el documento cambia una decisión, dejá la entrada nueva en el historial de versiones de ese
+   documento, no acá.

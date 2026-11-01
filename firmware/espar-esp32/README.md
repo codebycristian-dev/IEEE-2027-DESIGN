@@ -3,10 +3,10 @@
 Firmware del ESP32 que conmuta los seis diodos PIN y adquiere métricas.
 
 Va acá:
-- Código fuente y su `platformio.ini` (o equivalente).
+- Código fuente y su configuración de compilación.
 - Tabla de pines: GPIO → parásito → estado.
-- Implementación del libro de códigos de `docs/diseno/DOC-06-libro-de-codigos.md`.
-- Medición del tiempo de conmutación: marca de tiempo en la conmutación y prueba de `A4`.
-- Modo receptor estricto: el firmware no debe transmitir. Ver `R1` en `docs/teoria/04`.
+- La lista cerrada de configuraciones que se cargan, coincidente con el libro de códigos documentado.
+- Medición del tiempo de conmutación, con un pin de monitoreo dedicado.
+- Configuración de recepción estricta: el firmware **no transmite** (`R1` de las bases).
 
-Regla: los estados del código son los `K*` de DOC-06. El firmware no inventa configuraciones.
+Regla: el firmware implementa el libro de códigos documentado; no inventa configuraciones.
