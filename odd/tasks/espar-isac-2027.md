@@ -35,6 +35,20 @@ S8. El repositorio debe respaldar esas 4 páginas, con trazabilidad explícita y
 | T15 | S4, S5 | BOM contra tope US$1500, cronograma, preguntas P1-P4 | `gestion/` | U7 |
 | T16 | S7, S8 | Mapa de las 4 páginas y esqueletos de capítulo | `docs/borrador/` | U7 |
 
+## Commits
+
+Unidades de trabajo en la rama `feat/repo-espar-isac`, sobre `origin/main`.
+
+| Unidad | Commit | Tareas | Contenido |
+| --- | --- | --- | --- |
+| U1 | `090bdf1` | T1, T2, T3 | rama, árbol, feature doc, `docs/INDEX.md`, reubicación de DOC-01/DOC-02, README raíz y de cada carpeta |
+| U2 | `954eb58` | T4, T5 | N-01 fundamentos y N-02 estado del arte |
+| U3 | `aefe9ff` | T6, T7 | N-03 métricas e incertidumbre y N-04 trazabilidad |
+| U4 | `fec416d` | T8, T9 | DOC-03 especificación y DOC-04 geometría |
+| U5 | `a115467` | T10, T11 | DOC-05 control y DOC-06 libro de códigos con su verificador |
+| U6 | `092ee56` | T12, T13, T14 | DOC-07 verificación, DOC-08 riesgos y DOC-09 delta |
+| U7 | `90c2241` | T15, T16, T17 | `gestion/`, `docs/borrador/`, correcciones de consistencia |
+
 ## Log
 
 L1 (usuario, original): «me gustaria darle una estructura al repo, este va a ser el repositorio del diseño del concurso para participar en el concuros de antenas Reconfigurable Receiving Antennas for Integrated Sensing and Communications (ISAC) 2027 de la AP-S.»
@@ -46,3 +60,9 @@ L3 (decisión de orquestación): estructura por tipo de artefacto con capítulos
 L4 (decisión): git local `codebycristian-dev <cdoradog@unal.edu.co>` y remote `origin` migrado a SSH, porque HTTPS no tenía credenciales en esta máquina.
 
 L5 (decisión): id de trazabilidad con prefijos fijos — `R` (bases del concurso), `DR` (requisito de diseño), `DV` (variable de diseño), `DEC` (decisión), `A` (criterio de aceptación), `T` (protocolo de ensayo), `RSK` (riesgo). Todo documento nuevo usa estos prefijos y no crea otros.
+
+L6 (hallazgos de la revisión de consistencia, corregidos en U7): el writer delegado detectó cuatro defectos reales que quedaron corregidos — (a) `DOC-07` T-03 decía «10 estados» y enumeraba 9; se agregó `KX1`. (b) `DOC-07` T-04 declaraba 5400 paquetes con un producto de 1620; se corrigió a 1620. (c) `DOC-03` DEC-11 decía 66 mA y `DOC-05` §3 decía 65 mA; se unificó en 65 mA. (d) `P4` no figuraba en la matriz de trazabilidad `N-04` §7; se agregó marcada como no bloqueante.
+
+L7 (hallazgo propio, corregido en U5): el verificador `software/codebook/verificar_libro_de_codigos.py` falló en su primera corrida sobre `KX1` — la cadena y el valor hexadecimal estaban invertidos. Se corrigió el documento, no el script. Evidencia de que `DR-18` tiene una verificación ejecutable y no una inspección visual.
+
+L8 (decisión de proceso): la tarea se ejecutó con la unidad de escritura de gestión y borrador delegada a `gentle-ai-worker` por disparo del backstop de contexto, con superficies de edición acotadas a `gestion/` y `docs/borrador/`. El resto se escribió inline por dependencia fuerte entre identificadores.
