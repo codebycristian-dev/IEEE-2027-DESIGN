@@ -114,7 +114,7 @@ centro del arreglo; distancia 1 m; nada metálico en el círculo de giro.
 2. Girar de 0° a 355° en pasos de 5°: en cada punto, dejar estabilizar 2 s y capturar **30
    paquetes** del TX de referencia.
 3. Registrar media y desviación estándar por punto.
-4. Repetir para `K0`, `KS1`–`KS6`, `KW1` y `KN1` (**10 estados**).
+4. Repetir para `K0`, `KS1`–`KS6`, `KW1`, `KN1` y `KX1` (**10 estados**).
 5. Repetir la vuelta de `K0` al final, para detectar deriva del enlace.
 
 **Tamaño de muestra.** 10 estados × 72 puntos × 30 paquetes = **21 600 paquetes**, más la vuelta de
@@ -152,7 +152,7 @@ un hotspot de teléfono), separados angularmente; ESP32.
    (`M-05`).
 5. Repetir toda la serie en **3 sesiones de días distintos**, para separar el efecto del entorno.
 
-**Tamaño de muestra.** 6 estados × 3 configuraciones × 3 sesiones × 30 paquetes = **5 400 paquetes**
+**Tamaño de muestra.** 6 estados × 3 configuraciones × 3 sesiones × 30 paquetes = **1 620 paquetes**
 por bloque.
 
 **Criterio.**

@@ -265,7 +265,7 @@ opción de demo, no como diseño base); fuente de banco (no es reproducible en a
 **Motivo:** `DR-13` exige alimentación ≤ 5 V y ausencia de tensiones peligrosas. USB cumple y es lo
 que cualquier aula tiene.
 
-**Consecuencia:** 66 mA de polarización más el consumo del ESP32 quedan holgados dentro de los
+**Consecuencia:** 65 mA de polarización más el consumo del ESP32 quedan holgados dentro de los
 500 mA de un puerto USB estándar.
 
 ### DEC-12 — Receptor: ESP32 con RSSI por paquete y MAC

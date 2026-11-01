@@ -33,6 +33,19 @@ los DOC-NN.
 | N-03 | Métricas, modelo y presupuesto de incertidumbre | `docs/teoria/03-metricas-y-modelo.md` |
 | N-04 | Requisitos y matriz de trazabilidad | `docs/teoria/04-requisitos-y-trazabilidad.md` |
 
+## Artefactos de gestión y borrador (no son DOC-NN)
+
+| Artefacto | Contenido | Archivo |
+| --- | --- | --- |
+| BOM | Lista de materiales y costo acumulado contra el tope de `R7` | `gestion/BOM.md` |
+| Cronograma | Plan fechado único: pasos, etapas de diseño, compuertas y ensayos | `gestion/cronograma.md` |
+| Preguntas `P#` | Registro de preguntas a los organizadores y correo de envío | `gestion/preguntas-organizadores.md` |
+| Mapa de la propuesta | Qué entra en cada una de las 4 páginas y de qué documento sale | `docs/borrador/00-mapa-propuesta-4-paginas.md` |
+| Esqueletos de capítulo | `01-introduccion` … `06-discusion`, en estado de esqueleto | `docs/borrador/` |
+
+Advertencia de vigencia: los esqueletos de `docs/borrador/` **no son la propuesta**. La propuesta se
+redacta después de la compuerta `G4` de `DOC-08`, con datos medidos.
+
 ## Convención de identificadores
 
 Los identificadores son estables: **no se renumeran ni se reutilizan** aunque el elemento se

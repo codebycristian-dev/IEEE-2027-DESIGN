@@ -122,6 +122,7 @@ Queda registrado para que la decisión no se reabra por olvido:
 | P1 | DR-02 | si hay que documentar de otra forma la operación como receptor, cambia el protocolo `T-01`, no el diseño |
 | P2 | DR-11 | si los instrumentos de desarrollo cuentan en el tope, el ESP32 y el VNA entran en la BOM y hay que recortar el resto |
 | P3 | DR-06 | si cada equipo lleva sus propios TX a Kioto, hay que verificar certificación japonesa y sumarla a la BOM |
+| P4 | ninguno vigente | **no bloqueante**: solo era relevante si se elegía RIS, descartada en DOC-02 §7. Se envía igual para dejar constancia escrita de cómo los organizadores leen «antena receptora», que es el criterio que respalda DR-03 |
 
 Están registradas en `gestion/preguntas-organizadores.md` con su fecha de envío.
 
